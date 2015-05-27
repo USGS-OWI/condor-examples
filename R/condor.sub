@@ -1,0 +1,13 @@
+executable=simple.sh
+arguments=run_on_condor.R $(Process)
+transfer_input_files=run_on_condor.R,.Renviron,lake_ids.tsv,packages.zip
+universe = vanilla
+output = out/$(Process).out
+error = err/$(Process).err
+log = log/$(Process).log
+requirements = (TARGET.Arch == "X86_64") && (TARGET.OpSys == "LINUX") && (Machine =!= "igsarmewfsm000.er.usgs.gov")
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+notification = never
+queue 2492
