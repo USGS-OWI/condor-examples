@@ -1,5 +1,3 @@
-
-
 # condor-examples
 
 This file contains several examples for using [HTCondor](https://research.cs.wisc.edu/htcondor/) to scale scientific
@@ -31,4 +29,4 @@ examples have
 with `.sh`.
 
 These examples may eventually be expanded to include tutorials that
-better document the tutorials.p
+better document the tutorials.
