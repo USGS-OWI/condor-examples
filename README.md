@@ -14,7 +14,9 @@ The examples include:
     snow parallel package on Linux.
   - _RStanExample_, which demonstrates how to use RStan on HTCondor on
     Windows where R is locally installed.
-	
+  - _DockerExamples_, which demonstrates how to use Docker (these
+    examples build up knowledge necessary to use Docker with
+    HTCondor). These are Linux based examples.
 
 The "sandbox" examples do not require R to be installed on the
 machines in the HTCondor flock. Conversely, the "sandboxed" examples
