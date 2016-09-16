@@ -1,9 +1,0 @@
-universe = docker
-executable = /bin/my_executable
-arguments = arg1
-docker_image = de
-transfer_input_files = some_input
-output = out
-error = err
-log = log
-queue
