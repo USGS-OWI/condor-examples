@@ -6,6 +6,7 @@ processing to a computer cluster.
 The examples include:
 
   - _QuickStart_, which is HTCondor's quick start example for Windows.
+  - _QuickStart_, which is HTCondor's quick start example for Linux.
   - _LearnR_, which is a very simple R example if R is installed on
     the local Widnows machine.
   - _R-Rtools-sandbox_, which demonstrates how to sandbox R and Rtools
