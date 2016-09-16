@@ -9,4 +9,4 @@ transfer_output_files   = out.txt
 transfer_output_remaps  = "out.txt = results/out$(Process).txt"
 error                   = errors/err.$(Process)
 log                     = logs/log.$(Process)
-queue 100
+queue 2
