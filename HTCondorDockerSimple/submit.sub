@@ -1,0 +1,9 @@
+universe = docker
+executable = test.py
+# arguments = test.py
+docker_image = python
+transfer_input_files = test.py
+output = out
+error = err
+log = log
+queue

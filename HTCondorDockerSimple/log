@@ -1,0 +1,31 @@
+000 (004.000.000) 09/02 12:29:30 Job submitted from host: <159.189.88.22:49246?addrs=159.189.88.22-49246+[--1]-49246>
+...
+007 (004.000.000) 09/02 12:29:30 Shadow exception!
+	Error from slot1@umesc-244.er.usgs.gov: Failed to open '/home/rerickson/HTCondorExamples/condor-examples/HTCondorDockerSimple/out' as standard output: Permission denied (errno 13)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (004.000.000) 09/02 12:29:30 Job was held.
+	Error from slot1@umesc-244.er.usgs.gov: Failed to open '/home/rerickson/HTCondorExamples/condor-examples/HTCondorDockerSimple/out' as standard output: Permission denied (errno 13)
+	Code 7 Subcode 13
+...
+009 (003.000.000) 09/02 12:29:39 Job was aborted by the user.
+	via condor_rm (by user rerickson)
+...
+009 (004.000.000) 09/02 12:29:39 Job was aborted by the user.
+	via condor_rm (by user rerickson)
+...
+000 (005.000.000) 09/02 12:30:51 Job submitted from host: <159.189.88.22:49246?addrs=159.189.88.22-49246+[--1]-49246>
+...
+007 (005.000.000) 09/02 12:30:51 Shadow exception!
+	Error from slot1@umesc-244.er.usgs.gov: Failed to open '/home/rerickson/HTCondorExamples/condor-examples/HTCondorDockerSimple/out' as standard output: Permission denied (errno 13)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (005.000.000) 09/02 12:30:51 Job was held.
+	Error from slot1@umesc-244.er.usgs.gov: Failed to open '/home/rerickson/HTCondorExamples/condor-examples/HTCondorDockerSimple/out' as standard output: Permission denied (errno 13)
+	Code 7 Subcode 13
+...
+009 (005.000.000) 09/02 12:30:59 Job was aborted by the user.
+	via condor_rm (by user rerickson)
+...
