@@ -1,0 +1,27 @@
+notification = never
+
+universe = vanilla
+output = log\worker_$(Cluster)_$(Process).out
+error = log\worker_$(Cluster)_$(Process).err
+stream_output = True
+stream_error = True
+executable = toy.bat
+load_profile = True
+requirements = ((Target.OpSys=="WINDOWS" ) && (Target.Arch=="X86_64"))
+# Target.OpSys=="WINDOWS" ||  && (PoolName=="umesc-gis")
+rank = MIPS
+should_transfer_files = YES
+arguments = $(Process) 
+transfer_output_files = out.csv
+transfer_output_remaps = "out.csv = results/out$(Process).csv"
+transfer_input_files = data
+when_to_transfer_output = ON_EXIT_OR_EVICT
+
+## This code restarts held jobs automatically  
+# Send the job to Held state on failure. 
+on_exit_hold = (ExitBySignal == True) || (ExitCode != 0)  
+
+# Periodically retry the jobs every 60 seconds, up to a maximum of 5 retries.
+periodic_release =  (NumJobStarts < 5) && ((CurrentTime - EnteredCurrentStatus) > 60)
+
+queue 1
