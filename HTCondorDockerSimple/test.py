@@ -1,4 +1,7 @@
-target = open("/opt/rerickson/out.txt", 'w')
+import sys
 
-target.write("Hello world!")
+rep = sys.argv[1]
+target = open("out.txt", 'w')
+target.write("Hello world!\nWe are on rep: ")
+target.write( rep)
 target.close()

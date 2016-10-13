@@ -1,9 +1,12 @@
-universe = docker
-executable = test.py
-# arguments = test.py
-docker_image = python
-transfer_input_files = test.py
-output = out
-error = err
-log = log
-queue
+universe                = docker
+executable              = python
+arguments               = test.py $(Process)
+docker_image            = python
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+transfer_input_files    = test.py
+transfer_output_files   = out.txt
+transfer_output_remaps  = "out.txt = results/out$(Process).txt"
+error                   = errors/err.$(Process)
+log                     = logs/log.$(Process)
+queue 2
